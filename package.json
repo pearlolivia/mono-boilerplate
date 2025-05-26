@@ -1,0 +1,15 @@
+{
+  "name": "mono-boilerplate",
+  "packageManager": "yarn@4.9.1",
+  "private": true,
+  "workspaces": [
+    "server",
+    "client"
+  ],
+  "scripts": {
+    "start": "concurrently \"yarn workspace server start\" \"yarn workspace client start\""
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}
