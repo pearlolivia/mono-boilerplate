@@ -1,14 +1,15 @@
 import { useEffect, useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
+import { api } from './services/api.service'
+import ROUTES from '@/ROUTES'
 
 function App() {
   const [count, setCount] = useState(0)
 
   useEffect(() => {
-    fetch('http://localhost:3200/api/app/example')
-    .then((res) => res.json())
-    .then((data) => console.log(data))
+    api(`${ROUTES.app.example}`)
+    .then((res) => console.log(res.data))
   }, [])
 
   return (

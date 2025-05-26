@@ -10,10 +10,9 @@ export default defineConfig({
   },
   resolve: {
     alias: {
+      '@/ROUTES': path.resolve(__dirname, '../server/routes/endpoints'),
+      '@/MODELS': path.resolve(__dirname, '../server/models'),
       '@': path.resolve(__dirname, './src')
     }
-    // alias: [
-    //   { find: '@', replacement: path.resolve(__dirname, './src') },
-    // ],
   }
 })

@@ -2,7 +2,7 @@ import { lazy, Suspense, StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import { BrowserRouter, Route, Routes } from 'react-router'
 import { ToastContainer } from 'react-toastify'
-import Loading from './components/Molecules/Loading/Loading.tsx'
+import Loading from '@/components/Molecules/Loading'
 import './index.css'
 
 const App = lazy(() => import('./App.tsx'))

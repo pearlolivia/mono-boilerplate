@@ -13,14 +13,10 @@ app.use(cors())
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
 
-// app.listen(port, () => {
-//     console.log(`Server running on port ${port}`)
-// })
-
 const start = async () => {
     try {
         await mongoose.connect(process.env.DB_STRING)
-        app.listen(port, () => {
+        app.listen(process.env.PORT_NUMBER, () => {
             console.info(`Server running on port: ${port}`)
         })
         app.get('/test', (req, res) => {
