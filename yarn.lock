@@ -3028,6 +3028,14 @@ __metadata:
   languageName: node
   linkType: hard
 
+"mono-boilerplate@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "mono-boilerplate@workspace:."
+  dependencies:
+    concurrently: "npm:^9.1.2"
+  languageName: unknown
+  linkType: soft
+
 "mpath@npm:0.9.0":
   version: 0.9.0
   resolution: "mpath@npm:0.9.0"
@@ -3475,14 +3483,6 @@ __metadata:
   checksum: 10c0/900a93d3cdae3acd7d16f642c29a642aea32c2026446151f0778c62ac089d4b8e6c986811076e1ae180a694cedf077d453a11b58ff0a865629a4f82ab558e102
   languageName: node
   linkType: hard
-
-"quiz@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "quiz@workspace:."
-  dependencies:
-    concurrently: "npm:^9.1.2"
-  languageName: unknown
-  linkType: soft
 
 "range-parser@npm:^1.2.1":
   version: 1.2.1

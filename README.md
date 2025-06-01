@@ -1,1 +1,1 @@
-# quiz
+# mono-boilerplate

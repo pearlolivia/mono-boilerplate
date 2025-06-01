@@ -1,5 +1,5 @@
 {
-  "name": "quiz",
+  "name": "mono-boilerplate",
   "packageManager": "yarn@4.9.1",
   "private": true,
   "workspaces": [
